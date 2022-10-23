@@ -1,0 +1,42 @@
+﻿@page
+@model _2._0.Pages.ClientsModel
+@{
+}
+<br />
+<h2>List of Clients</h2>
+<a class='btn btn-primary btn-sm' href='/Create'>New Client</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <!--<th>Address</th>
+            <th>Home Number</th>
+            <th>Cell Number</th>
+            <th>Date of Birth</th>-->
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.listClients)
+        {
+            <tr>
+                <td>@item.idNumber</td>
+                <td>@item.firstName</td>
+                <td>@item.lastName</td>
+                <!--<td>@item.address</td>
+                <td>@item.homeNumber</td>
+                <td>@item.cellNumber</td>
+                <td></>
+                -->
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Delete?id=@item.id">Delete</a>
+                    <a class="btn btn-warning btn-sm" href="/View?id=@item.id">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

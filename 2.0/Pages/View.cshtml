@@ -1,0 +1,133 @@
+﻿@page
+@model _2._0.Pages.ViewModel
+@{
+}
+<br>
+<h2>View Client</h2>
+
+
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.clientInfo.id">
+    
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">ID Number</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="idNumber" value="@Model.clientInfo.idNumber">
+        </div>
+    </div>
+
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">First Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="firstName" value="@Model.clientInfo.firstName">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Last Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="lastName" value="@Model.clientInfo.lastName">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Address</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="address" value="@Model.clientInfo.address">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Home Number</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="homeNumber" value="@Model.clientInfo.homeNumber">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Cell Number</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="cellNumber" value="@Model.clientInfo.cellNumber">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of Birth</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateOfBirth" value="@Model.clientInfo.dateOfBirth">
+        </div>
+    </div>
+
+     
+    <h3>Corona details</h3>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of vaccination 1</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateVaccine1" value="@Model.clientInfo.dateVaccine1">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Manufacturer of the vaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="vaccineManufacturer1" value="@Model.clientInfo.vaccineManufacturer1">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of vaccination 2</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateVaccine2" value="@Model.clientInfo.dateVaccine2">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Manufacturer of the vaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="vaccineManufacturer2" value="@Model.clientInfo.vaccineManufacturer2">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of vaccination 3</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateVaccine3" value="@Model.clientInfo.dateVaccine3">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Manufacturer of the vaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="vaccineManufacturer3" value="@Model.clientInfo.vaccineManufacturer3">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of vaccination 4</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateVaccine4" value="@Model.clientInfo.dateVaccine4">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Manufacturer of the vaccine</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="vaccineManufacturer4" value="@Model.clientInfo.vaccineManufacturer4">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of positive result</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="datePoitiveResult" value="@Model.clientInfo.datePositiveResult">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Date of recovery</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="dateRecovery" value="@Model.clientInfo.dateRecovery">
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <div class="row mb-3">
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Clients" role="button">Cancel</a>
+        </div>
+    </div>
+</form>
+
