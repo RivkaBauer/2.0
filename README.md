@@ -7,5 +7,14 @@
 
 ### This application allows you to access an HMO database .
 
-### create/read/update/delete Clients (CRUD).
+* create/read/update/delete Clients (CRUD).
 
+
+## USAGE
+* Step 1. Install SQL Server on Windows, Linux.
+* Step 2. Install SQL Server Management Studio.
+* Step 3. Create connection to your SQL Server, which could be locally or remote depending on where you installed the SQL server.
+
+
+## DBMS used
+SQL Server Microsoft
