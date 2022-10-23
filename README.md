@@ -4,4 +4,4 @@
 
 ### This application allows you to access an HMO database .
 
-create/read/update/delete Clients (CRUD).
+### create/read/update/delete Clients (CRUD).
